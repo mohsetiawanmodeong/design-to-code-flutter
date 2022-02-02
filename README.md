@@ -1,4 +1,4 @@
-# bwa_chatty
+# Design to Code with Flutter
 
 A new Flutter project.
 
