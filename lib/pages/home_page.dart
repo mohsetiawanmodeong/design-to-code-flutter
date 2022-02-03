@@ -82,6 +82,13 @@ class HomePage extends StatelessWidget {
                         time: '2:30',
                         unread: false,
                       ),
+                      ChatTile(
+                        imageUrl: 'assets/images/friend3.png',
+                        name: 'Uyo nanu',
+                        text: 'Ngapain mas bro...',
+                        time: '3:14',
+                        unread: false,
+                      ),
                       SizedBox(
                         height: 30,
                       ),
@@ -89,12 +96,17 @@ class HomePage extends StatelessWidget {
                         'Groups',
                         style: titleTextStyle,
                       ),
-                      ChatTile(
-                        imageUrl: 'assets/images/group1.png',
-                        name: 'jakarta Fair',
-                        text: 'Why does everyone ca...',
-                        time: '11:11',
-                        unread: false,
+                      InkWell(
+                        onTap: () {
+                          Navigator.pushNamed(context, '/messagePage');
+                        },
+                        child: ChatTile(
+                          imageUrl: 'assets/images/group1.png',
+                          name: 'Jakarta Fair',
+                          text: 'Why does everyone ca...',
+                          time: '11:11',
+                          unread: false,
+                        ),
                       ),
                       ChatTile(
                         imageUrl: 'assets/images/group2.png',

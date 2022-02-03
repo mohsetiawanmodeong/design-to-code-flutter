@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'pages/home_page.dart';
+import 'pages/message_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -11,7 +12,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         fontFamily: 'Poppins',
       ),
-      home: HomePage(),
+      routes: {
+        '/': (context) => HomePage(),
+        '/messagePage': (context) => MessagePage(),
+      },
     );
   }
 }
